@@ -1,0 +1,175 @@
+/* * {
+    margin: 0;
+    padding: 0
+}
+
+#wrapper {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-areas:
+        'b5 b4 b9'
+        'b1 b6 b2'
+        'b8 b7 b3';
+}
+
+
+#b1 {
+    grid-area: b1
+}
+
+#b2 {
+    grid-area: b2
+}
+
+#b3 {
+    grid-area: b3
+}
+
+#b4 {
+    grid-area: b4
+}
+
+#b5 {
+    grid-area: b5
+}
+
+#b6 {
+    grid-area: b6
+}
+
+#b7 {
+    grid-area: b7
+}
+
+#b8 {
+    grid-area: b8
+}
+
+#b9 {
+    grid-area: b9
+} */
+
+
+
+body {}
+
+#bag {
+    position: absolute;
+    top: 0;
+    z-index: -900;
+    width: 100%;
+    height: 100vh;
+}
+@media only screen and (max-width: 500px) {
+    #bag {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #imgwrap {
+        display: none;
+    }
+}
+
+
+#imgwrap {
+    position: absolute;
+    max-width: 40%;
+    left: 30%;
+    top: -5%;
+    z-index: 300;
+    animation: swing 3.5s ease-in-out forwards infinite;
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(8deg);
+    }
+
+    50% {
+        transform: rotate(-4deg)
+    }
+
+    100% {
+        transform: rotate(8deg);
+    }
+}
+
+#wrapper {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8.5%;
+    max-width: 28%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    animation: swing 3.5s ease-in-out forwards infinite;
+
+}
+
+@media only screen and (min-width: 500px) and (max-width: 600px) {
+    #wrapper {   margin-top: 4.9% ;
+       
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 650px) {
+    #wrapper {margin-top:5.5% ;
+        
+    }
+}
+@media only screen and (min-width: 650px) and (max-width: 700px) {
+    #wrapper {margin-top:6% ;
+        
+    }
+}
+@media only screen and (min-width: 700px) and (max-width: 800px) {
+    #wrapper {margin-top:6.5% ;
+        
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+    #wrapper {margin-top:7.3% ;
+        
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+    #wrapper {margin-top:7.5% ;
+        
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #wrapper {
+        display: none;
+    }
+}
+
+img {
+    max-width: 100%;
+
+}
+
+
+#rota {animation: rota 5s ease-in-out alternate infinite;margin-left: 80px;margin-top: 150px}
+
+@media only screen and (min-width: 500px) and (max-width: 1800px) {
+    #rota {
+        display: none
+    }
+}
+
+@keyframes rota {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(92deg)
+    }
+
+}
